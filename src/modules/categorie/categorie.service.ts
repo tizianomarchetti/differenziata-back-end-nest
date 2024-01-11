@@ -6,7 +6,7 @@ import { UpdateCategorieDto } from './dto/update-categorie.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Categorie } from './entities/categorie.entity';
 import { Repository } from 'typeorm';
-import { BaseService } from 'src/templates/service/base-service';
+import { BaseService } from '../../templates/service/base-service';
 
 @Injectable()
 export class CategorieService extends BaseService<Categorie, CreateCategorieDto, UpdateCategorieDto> {

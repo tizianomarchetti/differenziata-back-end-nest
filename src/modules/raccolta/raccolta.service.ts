@@ -6,7 +6,7 @@ import { UpdateRaccoltaDto } from './dto/update-raccolta.dto';
 import { Raccolta } from './entities/raccolta.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { BaseService } from 'src/templates/service/base-service';
+import { BaseService } from '../../templates/service/base-service';
 
 @Injectable()
 export class RaccoltaService extends BaseService<Raccolta, CreateRaccoltaDto, UpdateRaccoltaDto> {
